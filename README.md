@@ -23,3 +23,4 @@ That's almost everything you need to run the files in this repository. Occasiona
 
 ## Example: Variation in the local Electric field around two moving positively charged spheres
 
+![Electric Field Preview](vpython-readme-vid.gif)
