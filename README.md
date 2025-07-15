@@ -46,6 +46,7 @@ VPython-Physics-Simulations/
 ├── electromagnetism/
 │   └── electric_field.py
 │
+├── vpython-readme-vid.gif
 │
 └── README.md
 ```
