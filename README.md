@@ -53,4 +53,4 @@ VPython-Physics-Simulations/
 
 ## Example: Variation in the local Electric field around two moving positively charged spheres
 
-![Electric Field Preview](misc/vpython-readme-vid.gif)
+![Electric Field Preview](vpython-readme-vid.gif)
