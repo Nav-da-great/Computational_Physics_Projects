@@ -2,7 +2,7 @@
 This repository documents my long-overdue journey into the self-driven exploration of computational physics, using interactive visualizations to build deeper intuition for physical phenomena, which is something that's often overlooked or easy to miss when learning solely through traditional textbooks.
 
 ## Why am I building this?
-I have always harbored a keen fascination for how the universe works, not just in abstract mathematical terms, but in how physical principles quietly govern everyday events. Whether it's the parabolic arc of a tennis ball hit with a lot of topspin or the newspaper boy tossing the newspaper with the perfect force to land just at my neighbour's door, I often find myself trying to mentally imagine these situations with the physics I have learned.
+I have always harbored a keen fascination for how the universe works, not just in abstract mathematical terms, but in how physical principles quietly govern everyday events. Whether it's the parabolic arc of a tennis ball hit with a lot of topspin or the newspaper boy tossing the newspaper with the perfect force to land just at my neighbour's door, I often find myself trying to imagine these situations with the physics I have learned mentally.
 
 This project is a way to bring those mental simulations to life. It is driven by a personal need to visualize, to see equations in motion (literally), and to experience the thrill when a few lines of Python code recreate how a satellite orbits the Earth, simply because nature deems it to behave that way.
 
@@ -19,7 +19,37 @@ To install the VPython package, run the following command:
 ```bash
 pip install vpython
 ```
-That's almost everything you need to run the files in this repository. Occasionally, I may use Numpy and Scipy; thus it may be helpful to have them installed in your environment as well. Furthermore, should you need, you may access the VPython documentation [here](https://glowscript.org/docs/VPythonDocs/index.html).
+That's almost everything you need to run the files in this repository. Occasionally, I may use Numpy and Scipy; thus it may be helpful to have them installed in your environment as well. Furthermore, should you need it, you can access the VPython documentation [here](https://glowscript.org/docs/VPythonDocs/index.html).
+
+## Repository structure
+```
+VPython-Physics-Simulations/
+│
+├── basic_computational_methods/
+│   ├── differentiators.py
+│   ├── integrators.py
+│   ├── root_finders.md
+│   └── root_finders.py
+│
+├── basics_of_vpython/
+│   ├── graphing.py
+│   ├── integration.py
+│   ├── monte_carlo_simul.py
+│   └── vectors.py
+│
+├── classical_mechanics/
+│   ├── angular_momentum.py
+│   ├── orbits.py
+│   ├── pi_from_blocks.py
+│   └── projectile_motion_with_drag.py
+│
+├── electromagnetism/
+│   └── electric_field.py
+│
+│
+└── README.md
+```
+
 
 ## Example: Variation in the local Electric field around two moving positively charged spheres
 
