@@ -46,6 +46,9 @@ Computational-Physics-Projects/
 ├── electromagnetism/
 │   └── electric_field.py
 │
+├── taylor-computer-solutions/
+│   └── problem-3-23.py
+│
 ├── vpython-readme-vid.gif
 │
 └── README.md
