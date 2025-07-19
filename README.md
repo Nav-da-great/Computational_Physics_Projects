@@ -1,4 +1,4 @@
-# Physics simulations using VPython
+# Computational Physics simulations and problem solving using Python
 This repository documents my long-overdue journey into the self-driven exploration of computational physics, using interactive visualizations to build deeper intuition for physical phenomena, which is something that's often overlooked or easy to miss when learning solely through traditional textbooks.
 
 ## Why am I building this?
@@ -9,21 +9,21 @@ This project is a way to bring those mental simulations to life. It is driven by
 Along the way, this repository also helps me build stronger physical intuition, understand the limitations and power of numerical methods, and develop clean scientific programming skills that will serve me in research. But at its core, it exists to nurture that joy of seeing physics unfold.
 
 ## Packages
-Everything in this repository is written from scratch using the [VPython](https://vpython.org/) library in Python 3.11.4. The latest versions of VPython are compatible with Python 3.8 through 3.12.
+Most files in this repository is written from scratch using the [VPython](https://vpython.org/) library in Python 3.11.4. The latest versions of VPython are compatible with Python 3.8 through 3.12.
 
 If you are using a different Python version, consider creating a [virtual environment](https://docs.python.org/3/library/venv.html) with a supported version to ensure compatibility.
 
-Additionally, you can use [Web VPython](https://vpython.org/presentation2018/noinstall.html) or install the VPython library and run it on a code editor of your choice.
+Additionally, you can use [Web VPython](https://vpython.org/presentation2018/noinstall.html) or install the VPython library and run it on a code editor of your choice. Furthermore, should you need it, you can access the VPython documentation [here](https://glowscript.org/docs/VPythonDocs/index.html).
 
 To install the VPython package, run the following command:
 ```bash
 pip install vpython
 ```
-That's almost everything you need to run the files in this repository. Occasionally, I may use Numpy and Scipy; thus it may be helpful to have them installed in your environment as well. Furthermore, should you need it, you can access the VPython documentation [here](https://glowscript.org/docs/VPythonDocs/index.html).
+That's almost everything you need to run the files in this repository. Some files also use Numpy and/or Scipy; thus, it may be helpful to have them installed in your environment as well, specifically in the ```taylor-computer-solutions``` directory, containing solutions to many computer-based problems from Classical Mechanics by John R. Taylor (2005)
 
 ## Repository structure
 ```
-VPython-Physics-Simulations/
+Computational-Physics-Projects/
 │
 ├── basic_computational_methods/
 │   ├── differentiators.py
