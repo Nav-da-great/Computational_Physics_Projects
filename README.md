@@ -8,21 +8,20 @@ This project is a way to bring those mental simulations to life. It is driven by
 
 Along the way, this repository also helps me build stronger physical intuition, understand the limitations and power of numerical methods, and develop clean scientific programming skills that will serve me in research. But at its core, it exists to nurture that joy of seeing physics unfold.
 
-## Packages
-Most files in this repository is written from scratch using the [VPython](https://vpython.org/) library in Python 3.11.4. The latest versions of VPython are compatible with Python 3.8 through 3.12.
+## Packages and usage
+Most files in this repository are written from scratch using the [VPython](https://vpython.org/) library in Python 3.11.4. The latest versions of VPython are compatible with Python 3.8 through 3.12.
 
 If you are using a different Python version, consider creating a [virtual environment](https://docs.python.org/3/library/venv.html) with a supported version to ensure compatibility.
 
 Additionally, you can use [Web VPython](https://vpython.org/presentation2018/noinstall.html) or install the VPython library and run it on a code editor of your choice. Furthermore, should you need it, you can access the VPython documentation [here](https://glowscript.org/docs/VPythonDocs/index.html).
 
+To run all programs that involve a 3D simulation, you must have the ```tools.py``` file imported from its location on your machine.
+
 To install the VPython package, run the following command:
 ```bash
 pip install vpython
 ```
-That's almost everything you need to run the files in this repository. Some files also use Numpy and/or Scipy; thus, it may be helpful to have them installed in your environment as well, specifically in the ```taylor-computer-solutions``` directory, containing solutions to many computer-based problems from Classical Mechanics by John R. Taylor (2005).
-
-## Usage
-To run all programs that involve a 3D simulation, you must have the ```tools.py``` file imported from its location on your machine
+That's almost everything you need to run the files in this repository. Some files also utilize Numpy and/or Scipy; therefore, it may be helpful to have them installed in your environment as well, specifically in the ```taylor-computer-solutions``` directory, which contains solutions to many computer-based problems from Classical Mechanics by John R. Taylor (2005).
 
 ## Repository structure
 ```
