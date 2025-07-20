@@ -1,4 +1,22 @@
 from vpython import *
+from tools import *
+
+canvas(Title = "<h1>Solution to problem 3.23 from Taylor's Classical Mechanics</h1>")
+sim = Simulation()
+
+graph = graph(title = "Trajectory of grenade", xtitle = "x-axis", ytitle = "y-axis", ymax = 20, ymin = -20, xmax = 30)
+figure1 = gcurve(color = color.red, label = "Grenade") # Grenade curve
+figure2 = gcurve(color = color.blue, label = "Piece 1")    # Exploded piece 1
+figure3 = gcurve(color = color.yellow, label = "Piece 2")  # Exploded piece 2
+figure4 = gcurve(color = color.orange, label = "Center of Mass")  # Center of Mass
+
+# ========================================== Exit button section ========================================== #
+
+wtext(text = "\n")
+exit_button = button(bind = sim.exit, text = "Exit simulation", background = color.red, color = color.white)
+wtext(text = "\n")
+
+# ========================================== Physical simulation section ========================================== #
 
 # Question: A grenade is thrown with initial velocity v o from the origin at the top of a high
 # cliff, subject to negligible air resistance. (a) Using a suitable plotting program, plot the orbit, with
@@ -17,17 +35,13 @@ net_mass = grenade.mass
 
 gravity = vector(0, -1, 0)
 
-graph = graph(title = "Trajectory of grenade", xtitle = "x-axis", ytitle = "y-axis", ymax = 20, ymin = -20, xmax = 30)
-figure1 = gcurve(color = color.red, label = "Grenade") # Grenade curve
-figure2 = gcurve(color = color.blue, label = "Piece 1")    # Exploded piece 1
-figure3 = gcurve(color = color.yellow, label = "Piece 2")  # Exploded piece 2
-figure4 = gcurve(color = color.orange, label = "Center of Mass")  # Center of Mass
+# ========================================== Animation loop ========================================== #
 
 t = 0
 dt = 0.001
 exploded = False    # Flag to track when ball explodes
 
-while True:
+while sim.running:
     rate(1000)
     if t <= 4:
         
