@@ -1,6 +1,17 @@
 from vpython import *
+from tools import *
 
-canvas(width = 1900, height = 800, background = color.black)
+# Simulation of a changing electric field between two moving/stationary charged particles
+
+canvas(width = 1900, height = 800, background = color.black, title = "<h1>Changing electric field between two charged particles</h1>")
+sim = Simulation()
+
+# ========================================== Exit button section ========================================== #
+
+wtext(text = "\n" + " " * 177)
+exit_button = button(bind = sim.exit, text = "Exit simulation", background = color.red, color = color.white)
+
+# ========================================== Physical simulation section ========================================== #
 
 k = 9e9
 Q = 1
@@ -18,7 +29,7 @@ max_strength_of_field = 1e11
 t = 0
 dt = 1/60
 
-# Create a rectangular plane of position vectors of test charges centered at origin
+# Create a rectangular plane of position vectors of test charges centered at the origin
 def rectangle_maker(rows, cols, spacing = 2):
     width = (cols - 1) * spacing
     height = (rows - 1) * spacing
@@ -35,10 +46,11 @@ position_array = rectangle_maker(20, 30, 0.05)
 # Using vector(0, 0, 0) as a dummy value to populate the array, will be handled with real values in animation loop
 field_array = [arrow(pos = vec, axis = vector(0, 0, 0), color = color.red, shaftwidth = 0.005) for vec in position_array] 
 
-# Animation loop
+# ========================================== Animation loop ========================================== #
+
 frame_count = 0
 
-while True:
+while sim.running:
 
     rate(60)    # 60 calculations per second ceiling
     # Update positions of both charges if they have a velocity
