@@ -19,7 +19,7 @@ To install the VPython package, run the following command:
 ```bash
 pip install vpython
 ```
-That's almost everything you need to run the files in this repository. Some files also use Numpy and/or Scipy; thus, it may be helpful to have them installed in your environment as well, specifically in the ```taylor-computer-solutions``` directory, containing solutions to many computer-based problems from Classical Mechanics by John R. Taylor (2005)
+That's almost everything you need to run the files in this repository. Some files also use Numpy and/or Scipy; thus, it may be helpful to have them installed in your environment as well, specifically in the ```taylor-computer-solutions``` directory, containing solutions to many computer-based problems from Classical Mechanics by John R. Taylor (2005).
 
 ## Usage
 To run all programs that involve a 3D simulation, you must have the ```tools.py``` file imported from its location on your machine
