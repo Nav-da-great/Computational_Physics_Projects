@@ -1,9 +1,21 @@
 from vpython import *
+from tools import *
 
-lol = graph(title = "Angular momentum of planet", xtitle = "time", ytitle = "Angular momentum", ymin = 0)
+# Visualisation of angular momentum and its conservation in a binary  system
+
+canvas(title = "<h1>Angular momentum simulation</h1>", background = color.black)
+sim = Simulation()
+
+g = graph(title = "Angular momentum of planet", xtitle = "time", ytitle = "Angular momentum", ymin = 0)
 figure1 = gcurve(color = color.blue)
 figure2 = gcurve(color = color.yellow)
 figure3 = gcurve(color = color.red)
+
+# ========================================== Exit button section ========================================== #
+
+exit_button = button(bind = sim.exit, text = "Exit simulation", background = color.red, color = color.white)
+
+# ========================================== Physical simulation section ========================================== #
 
 G = 6.67e-11
 v_earth = 3e4
@@ -29,8 +41,9 @@ sun_amomentum_arrow = arrow(pos = sun.pos, color = color.orange)
 t = 0
 dt = 10000
 
+# ========================================== Animation loop ========================================== #
 
-while True:
+while sim.running:
     rate(100)
 
     r = sun.pos - planet.pos
@@ -60,5 +73,3 @@ while True:
     figure3.plot(t, mag(angular_momentum_planet + angular_momentum_sun))
 
     t += dt
-
-
