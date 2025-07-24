@@ -56,12 +56,16 @@ Computational-Physics-Projects/
 │
 ├── README.md
 │
-├── tools.py
+├── collisions.gif
 │
-└── vpython-readme-vid.gif
+├── electric_field.gif
+│
+└── tools.py
 ```
 
 
-## Example: Variation in the local Electric field around two moving positively charged spheres
+## Example 1: Variation in the local Electric field around two moving positively charged spheres
+![Electric Field Preview](electric_field.gif)
 
-![Electric Field Preview](vpython-readme-vid.gif)
+## Example 2: Collision of two blocks to represent pi (well known because of 3b1b)
+![Collisions preview](collisions.gif)
