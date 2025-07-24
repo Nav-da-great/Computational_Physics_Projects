@@ -1,27 +1,29 @@
 from vpython import *
-from tools import *
+from basics_of_vpython.tools import *
 
 # Simulation of an elastic collision of two blocks and a wall
-
-canvas(width = 600, height = 600, background = color.black, title = "<h1>Elastic collision of two blocks to calculate Pi</h1>")
+scene.caption = ""
+canvas(width = 1900, height = 600, background = color.black, title = "<h1>Elastic collision of two blocks to calculate Pi</h1>")
 sim = Simulation()
 
 # ========================================== Exit button section ========================================== #
 
-wtext(text="\n\n" + " " * 45)  # Space for visual centering
+wtext(text="\n\n" + " " * 177)  # Space for visual centering
 exit_button = button(bind = sim.exit, text = "Exit simulation", background = color.red, color = color.white)
 
 # ========================================== Physical simulation section ========================================== #
 
 mass_large = 10000
 mass_small = 1
-k1 = 1e5
+k1 = 1.1e5
 k2 = k1
 l_eq = 0.05
 
-largeBox = box(pos = vector(0.2, 0.15, 0), size = vector(0.3, 0.3, 0.05), color = color.cyan)
-smallBox = box(pos = vector(-0.3, 0.05, 0), size = vector(0.1, 0.1, 0.05), color = color.yellow)
-wall = box(pos = vector(-0.75, 0.5, 0), size = vector(0.2, 1, 0.05))
+largeBox = box(pos = vector(0.25, 0.15, 0), size = vector(0.3, 0.3, 0.3), color = color.cyan)
+smallBox = box(pos = vector(-0.3, 0.05, 0), size = vector(0.1, 0.1, 0.1), color = color.yellow)
+wall = box(pos = vector(-0.75, 1, 0), size = vector(0.2, 2, 1))
+ground = box(pos = vector(1.15, -0.1, 0), size = vector(4, 0.2, 1))
+
 
 largeBox.p = mass_large * vector(-0.075, 0, 0)
 smallBox.p = mass_small * vector(0, 0, 0)
@@ -32,6 +34,19 @@ dt = 1e-5
 count = 0
 box_colliding = False
 wall_colliding = False
+
+collision_label = label(
+    pos = vector(0.5, -0.4, 0),
+    text = "Collisions: 0",
+    height = 16,
+    box = True,
+    border = 6,
+    font = 'sans',
+    line = False,
+    color = color.white,
+    background = color.gray(0.2),
+    opacity = 0.9
+)
 
 # ========================================== Animation loop ========================================== #
 
@@ -65,8 +80,9 @@ while sim.running:
             wall_colliding = True
     else:
         wall_colliding = False
-        
-        largeBox.p += force_large * dt
+
+
+    largeBox.p += force_large * dt
     largeBox.pos += (largeBox.p / mass_large) * dt
 
     smallBox.p += force_small * dt
@@ -74,6 +90,8 @@ while sim.running:
 
     t += dt
 
-# Additional remarks: By tweaking the values of of spring constants (and subsequently reducing dt to be computationally less intensive),
+    collision_label.text = f"Collisions: {count}"
+
+# Additional remarks: By tweaking the values of spring constants (and subsequently reducing dt to be computationally less intensive),
 # one can plot the phase space of the x-components of the velocities of both blocks and notice that as collisions become more frequent
 # the plot (by virtue of momentum conservation) tends to be bounded by a circle, thus yielding the answer pi    
