@@ -44,6 +44,7 @@ Computational-Physics-Projects/
 │
 ├── classical_mechanics/
 │   ├── angular_momentum.py
+│   ├── double_pendulum.py
 │   ├── orbits.py
 │   ├── pi_from_blocks.py
 │   └── projectile_motion_with_drag.py
