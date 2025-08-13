@@ -52,6 +52,9 @@ Computational-Physics-Projects/
 ├── electromagnetism/
 │   └── electric_field.py
 │
+├── statistical_mechanics/
+│   └── brownian_motion.py
+│
 ├── taylor-computer-solutions/
 │   └── problem-3-23.py
 │
