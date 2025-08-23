@@ -1,5 +1,5 @@
 from vpython import *
-from basics_of_vpython.tools import Simulation
+from utilities.tools import Simulation
 
 sim = Simulation()
 canvas(width = 1900, height = 600)
@@ -95,3 +95,4 @@ while sim.running:
         
         spring_2.pos = bob_1.pos
         spring_2.axis = bob_2.pos - bob_1.pos
+
