@@ -1,5 +1,5 @@
 from vpython import *
-from tools import *
+from utilities.tools import Simulation
 
 canvas(Title = "<h1>Solution to problem 3.23 from Taylor's Classical Mechanics</h1>")
 sim = Simulation()
@@ -86,3 +86,4 @@ while sim.running:
         figure4.plot(cm_tracker.pos.x, cm_tracker.pos.y)
 
     t += dt
+
