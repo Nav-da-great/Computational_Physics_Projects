@@ -3,7 +3,7 @@ This page covers installation, dependencies, and how to run example programs.
 
 Should you require more information, follow the links below:
 
-1. {Breakdown of each file}
+1. [Repository structure](STRUCTURE.md)
 2. [Demonstrations](DEMO.md)
 3. [Why am I building this?](WHY.md)
 
