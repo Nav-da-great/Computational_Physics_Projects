@@ -1,80 +1,38 @@
-# Computational Physics simulations and problem solving using Python
-This repository documents my long-overdue journey into the self-driven exploration of computational physics, using interactive visualizations to build deeper intuition for physical phenomena, which is something that's often overlooked or easy to miss when learning solely through traditional textbooks.
+# Computational Physics Simulations with Python
+This page covers installation, dependencies, and how to run example programs.
 
-## Why am I building this?
-I have always harbored a keen fascination for how the universe works, not just in abstract mathematical terms, but in how physical principles quietly govern everyday events. Whether it's the parabolic arc of a tennis ball hit with a lot of topspin or the newspaper boy tossing the newspaper with the perfect force to land just at my neighbour's door, I often find myself trying to imagine these situations with the physics I have learned mentally.
+Should you require more information, follow the links below:
 
-This project is a way to bring those mental simulations to life. It is driven by a personal need to visualize, to see equations in motion (literally), and to experience the thrill when a few lines of Python code recreate how a satellite orbits the Earth, simply because nature deems it to behave that way.
-
-Along the way, this repository also helps me build stronger physical intuition, understand the limitations and power of numerical methods, and develop clean scientific programming skills that will serve me in research. But at its core, it exists to nurture that joy of seeing physics unfold.
+1. {Breakdown of each file}
+2. {Demonstrations}
+3. {Why am I building this?}
 
 ## Packages and usage
-Most files in this repository are written from scratch using the [VPython](https://vpython.org/) library in Python 3.11.4. The latest versions of VPython are compatible with Python 3.8 through 3.12.
+Most files use [VPython](https://vpython.org/), compatible with **Python 3.8** - **3.12** for running locally as ```.py``` files.
 
-If you are using a different Python version, consider creating a [virtual environment](https://docs.python.org/3/library/venv.html) with a supported version to ensure compatibility.
+You may also use the [web browser version of VPython](https://vpython.org/presentation2018/noinstall.html) or run it in a Jupyter notebook. Full documentation is available [here](https://glowscript.org/docs/VPythonDocs/index.html).
 
-Additionally, you can use [Web VPython](https://vpython.org/presentation2018/noinstall.html) or install the VPython library and run it on a code editor of your choice. Furthermore, should you need it, you can access the VPython documentation [here](https://glowscript.org/docs/VPythonDocs/index.html).
-
-To run all programs that involve a 3D simulation, you must have the ```tools.py``` file imported from its location on your machine.
-
-To install the VPython package, run the following command:
+To begin, clone the repository by running this in your terminal:
 ```bash
-pip install vpython
+git clone https://github.com/Nav-da-great/Computational-Physics-Projects.git
+cd Computational-Physics-Projects
 ```
-That's almost everything you need to run the files in this repository. Some files also utilize Numpy and/or Scipy; therefore, it may be helpful to have them installed in your environment as well, specifically in the ```taylor-computer-solutions``` directory, which contains solutions to many computer-based problems from Classical Mechanics by John R. Taylor (2005).
-
-## Repository structure
+Now, create a virtual environment in the project directory:
+```bash
+python -m venv .venv
 ```
-Computational-Physics-Projects/
-│
-├── basic_computational_methods/
-│   ├── differentiators.py
-│   ├── integrators.py
-│   ├── root_finders.md
-│   └── root_finders.py
-│
-├── basics_of_vpython/
-│   ├── button.py
-│   ├── checkbox.py
-│   ├── graphing.py
-│   ├── integration.py
-│   ├── monte_carlo_simul.py
-│   ├── slider.py
-│   └── vectors.py
-│
-├── classical_mechanics/
-│   ├── angular_momentum.py
-│   ├── double_pendulum.py
-│   ├── orbits.py
-│   ├── pi_from_blocks.py
-│   └── projectile_motion_with_drag.py
-│
-├── electromagnetism/
-│   └── electric_field.py
-│
-├── statistical_mechanics/
-│   └── brownian_motion.py
-│
-├── taylor-computer-solutions/
-│   └── problem-3-23.py
-│
-├── README.md
-│
-├── collisions.gif
-│
-├── double_pendulum.gif
-│
-├── electric_field.gif
-│
-└── tools.py
+Activate the virtual environment:
+```bash
+.\.venv\Scripts\activate    # Windows
+source .venv/bin/activate   # macOS/Linux
 ```
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+## Running an example program
 
-
-## Example 1: Variation in the local Electric field around two moving positively charged spheres
-![Electric Field Preview](electric_field.gif)
-
-## Example 2: Simulation of chaos from a double pendulum
-![Double pendulum preview](double_pendulum.gif)
-
-## Example 3: Collision of two blocks to calculate pi
-![Collisions preview](collisions.gif)
+Run an example program (e.g. ```electromagnetism/electric_field.py```):
+```bash
+python .\electromagnetism\electric_field.py
+```
