@@ -1,5 +1,5 @@
 from vpython import *
-from basics_of_vpython.tools import Simulation
+from utilities.tools import Simulation
 
 sim = Simulation()
 canvas(width = 1900, height = 600)
