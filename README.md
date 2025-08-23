@@ -4,7 +4,7 @@ This page covers installation, dependencies, and how to run example programs.
 Should you require more information, follow the links below:
 
 1. {Breakdown of each file}
-2. {Demonstrations}
+2. [Demonstrations](DEMO.md)
 3. {Why am I building this?}
 
 ## Packages and usage
