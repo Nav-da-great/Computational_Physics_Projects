@@ -1,7 +1,7 @@
 from vpython import *
 from utilities.tools import Simulation
 
-# Visualisation of angular momentum and its conservation in a binary  system
+# Visualisation of angular momentum and its conservation in a binary-star system
 
 canvas(title = "<h1>Angular momentum simulation</h1>", background = color.black)
 sim = Simulation()
@@ -73,4 +73,5 @@ while sim.running:
     figure3.plot(t, mag(angular_momentum_planet + angular_momentum_sun))
 
     t += dt
+
 
