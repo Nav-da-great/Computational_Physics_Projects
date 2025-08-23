@@ -1,0 +1,4 @@
+vpython==7.6.5
+numpy==2.3.0
+matplotlib==3.10.3
+matplotlib-inline==0.1.7
