@@ -5,7 +5,7 @@ Should you require more information, follow the links below:
 
 1. {Breakdown of each file}
 2. [Demonstrations](DEMO.md)
-3. {Why am I building this?}
+3. [Why am I building this?](WHY.md)
 
 ## Packages and usage
 Most files use [VPython](https://vpython.org/), compatible with **Python 3.8** - **3.12** for running locally as ```.py``` files.
