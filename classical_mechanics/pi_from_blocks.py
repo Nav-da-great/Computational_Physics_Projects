@@ -1,5 +1,5 @@
 from vpython import *
-from basics_of_vpython.tools import *
+from utilities.tools import Simulation
 
 # Simulation of an elastic collision of two blocks and a wall
 scene.caption = ""
@@ -95,3 +95,4 @@ while sim.running:
 # Additional remarks: By tweaking the values of spring constants (and subsequently reducing dt to be computationally less intensive),
 # one can plot the phase space of the x-components of the velocities of both blocks and notice that as collisions become more frequent
 # the plot (by virtue of momentum conservation) tends to be bounded by a circle, thus yielding the answer pi    
+
