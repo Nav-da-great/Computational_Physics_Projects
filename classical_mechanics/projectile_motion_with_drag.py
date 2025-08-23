@@ -1,5 +1,5 @@
 from vpython import *
-from tools import *
+from utilities.tools import Simulation
 
 # Simulation of projectile motion with and without drag
 canvas(width = 1900, height = 800, title = "Simulation of projectile motion with and without drag", background = color.black)
@@ -62,3 +62,4 @@ while sim.running:
         varrow_real.axis = vscale * (ball_real.momentum/ball_real.mass)
 
         t += dt
+
