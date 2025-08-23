@@ -1,5 +1,5 @@
 from vpython import *
-from tools import *
+from utilities.tools import Simulation
 
 # Simulation of a satellite in an orbit around the Earth
 
@@ -51,3 +51,4 @@ while sim.running:
     potential_energy.plot(t, U)
     total_energy.plot(t, E)
     t += dt
+
