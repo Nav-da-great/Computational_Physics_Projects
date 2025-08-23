@@ -1,5 +1,5 @@
 from vpython import *
-from tools import *
+from utilities.tools import Simulation
 
 # Simulation of a changing electric field between two moving/stationary charged particles
 
@@ -84,3 +84,4 @@ while sim.running:
             field_array[i].color = vector(norm_strength, 0, 1 - norm_strength)
 
     frame_count += 1
+
