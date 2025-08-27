@@ -28,9 +28,11 @@ bob1.momentum = bob1.mass * vector(0,0,0)
 rod1 = cylinder(pos = vector(0,0,0), axis = bob1.pos, radius = 0.1)
 
 def binds(evt):
-    global l1
+    global l1, w1
     if evt.id == 'l':
+        old_l = l1
         l1 = evt.value
+        w1 = w1 * (old_l**2/l1**2)
     if evt.id == 't':
         bob1.make_trail = not (bob1.make_trail)
         if bob1.make_trail:
@@ -50,16 +52,18 @@ gravity = 9.8
 dt = 0.01
 while sim.running:
     rate(100)
+    
+    # Handling positions upon mousedown within range of a bob
+    if (mag(bob1.pos - scene.mouse.pos) < 2 * bob1.radius):
+        while drag:
+            θ_temp = atan2(scene.mouse.pos.x, -scene.mouse.pos.y)
+            bob1.pos = l1 * vector(sin(θ_temp), -cos(θ_temp), 0)
+            θ1 = θ_temp
+            a1 = 0
+            w1 = 0
+            rod1.axis = bob1.pos
+    
     if not sim.pause:
-        # Handling positions upon mousedown within range of a bob
-        if (mag(bob1.pos - scene.mouse.pos) < 2 * bob1.radius):
-            while drag:
-                θ_temp = atan2(scene.mouse.pos.x, -scene.mouse.pos.y)
-                bob1.pos = l1 * vector(sin(θ_temp), -cos(θ_temp), 0)
-                θ1 = θ_temp
-                a1 = 0
-                w1 = 0
-                rod1.axis = bob1.pos
         a1 = (-gravity/l1) * sin(θ1)
         w1 += a1 * dt
         θ1 += w1 * dt
