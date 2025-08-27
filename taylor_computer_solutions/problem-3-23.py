@@ -13,7 +13,7 @@ figure4 = gcurve(color = color.orange, label = "Center of Mass")  # Center of Ma
 # ========================================== Exit button section ========================================== #
 
 wtext(text = "\n")
-exit_button = button(bind = sim.exit, text = "Exit simulation", background = color.red, color = color.white)
+exit_button = button(bind = sim.exit_bind, text = "Exit simulation", background = color.red, color = color.white)
 wtext(text = "\n")
 
 # ========================================== Physical simulation section ========================================== #

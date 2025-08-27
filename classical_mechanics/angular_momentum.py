@@ -13,7 +13,7 @@ figure3 = gcurve(color = color.red)
 
 # ========================================== Exit button section ========================================== #
 
-exit_button = button(bind = sim.exit, text = "Exit simulation", background = color.red, color = color.white)
+exit_button = button(bind = sim.exit_bind, text = "Exit simulation", background = color.red, color = color.white)
 
 # ========================================== Physical simulation section ========================================== #
 

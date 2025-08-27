@@ -9,7 +9,7 @@ sim = Simulation()
 # ========================================== Exit button section ========================================== #
 
 wtext(text = "\n" + " " * 177)
-exit_button = button(bind = sim.exit, text = "Exit simulation", background = color.red, color = color.white)
+exit_button = button(bind = sim.exit_bind, text = "Exit simulation", background = color.red, color = color.white)
 
 # ========================================== Physical simulation section ========================================== #
 
