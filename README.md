@@ -32,7 +32,15 @@ pip install -r requirements.txt
 ```
 ## Running an example program
 
-Run an example program (e.g. ```electromagnetism/electric_field.py```):
+This repository spans multiple domains in physics and uses shared utility modules (e.g., ```utilities/```). To run scripts directly, you need to add the repository root to your ```PYTHONPATH```.
+
+To run the program ```electromagnetism/electric_field.py``` for example:
+
+#### On Linux/macOS:
 ```bash
-python .\electromagnetism\electric_field.py
+PYTHONPATH=. python electromagnetism/electric_field.py
+```
+#### On Windows (PowerShell):
+```powershell
+$env:PYTHONPATH="."; python .\electromagnetism\electric_field.py
 ```
