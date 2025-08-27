@@ -13,18 +13,23 @@ Most files use [VPython](https://vpython.org/), compatible with **Python 3.8** -
 You may also use the [web browser version of VPython](https://vpython.org/presentation2018/noinstall.html) or run it in a Jupyter notebook. Full documentation is available [here](https://glowscript.org/docs/VPythonDocs/index.html).
 
 To begin, clone the repository by running this in your terminal:
-```bash
+```powershell
 git clone https://github.com/Nav-da-great/Computational-Physics-Projects.git
 cd Computational-Physics-Projects
 ```
 Now, create a virtual environment in the project directory:
-```bash
+```powershell
 python -m venv .venv
 ```
 Activate the virtual environment:
+
+On Windows:
+```powershell
+.\.venv\Scripts\activate
+```
+On Linux/macOS:
 ```bash
-.\.venv\Scripts\activate    # Windows
-source .venv/bin/activate   # macOS/Linux
+source .venv/bin/activate
 ```
 Install dependencies:
 ```bash
