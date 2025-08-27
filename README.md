@@ -22,14 +22,13 @@ Now, create a virtual environment in the project directory:
 python -m venv .venv
 ```
 Activate the virtual environment:
-
-On Windows:
-```powershell
-.\.venv\Scripts\activate
-```
-On Linux/macOS:
+**On Linux/macOS:**
 ```bash
 source .venv/bin/activate
+```
+**On Windows:**
+```powershell
+.\.venv\Scripts\activate
 ```
 Install dependencies:
 ```bash
@@ -41,11 +40,11 @@ This repository spans multiple domains in physics and uses shared utility module
 
 To run the program ```electromagnetism/electric_field.py``` for example:
 
-#### On Linux/macOS:
+**On Linux/macOS:**
 ```bash
 PYTHONPATH=. python electromagnetism/electric_field.py
 ```
-#### On Windows (PowerShell):
+**On Windows (PowerShell):**
 ```powershell
 $env:PYTHONPATH="."; python .\electromagnetism\electric_field.py
 ```
