@@ -13,18 +13,22 @@ Most files use [VPython](https://vpython.org/), compatible with **Python 3.8** -
 You may also use the [web browser version of VPython](https://vpython.org/presentation2018/noinstall.html) or run it in a Jupyter notebook. Full documentation is available [here](https://glowscript.org/docs/VPythonDocs/index.html).
 
 To begin, clone the repository by running this in your terminal:
-```bash
-git clone https://github.com/Nav-da-great/Computational-Physics-Projects.git
+```powershell
+git clone https://github.com/Nav-da-great/Computational_Physics_Projects.git
 cd Computational-Physics-Projects
 ```
 Now, create a virtual environment in the project directory:
-```bash
+```powershell
 python -m venv .venv
 ```
 Activate the virtual environment:
+**On Linux/macOS:**
 ```bash
-.\.venv\Scripts\activate    # Windows
-source .venv/bin/activate   # macOS/Linux
+source .venv/bin/activate
+```
+**On Windows:**
+```powershell
+.\.venv\Scripts\activate
 ```
 Install dependencies:
 ```bash
@@ -32,7 +36,15 @@ pip install -r requirements.txt
 ```
 ## Running an example program
 
-Run an example program (e.g. ```electromagnetism/electric_field.py```):
+This repository spans multiple domains in physics and uses shared utility modules (e.g., ```utilities/```). To run scripts directly, you need to add the repository root to your ```PYTHONPATH```.
+
+To run the program ```electromagnetism/electric_field.py``` for example:
+
+**On Linux/macOS:**
 ```bash
-python .\electromagnetism\electric_field.py
+export PYTHONPATH=. && python electromagnetism/electric_field.py
+```
+**On Windows (PowerShell):**
+```powershell
+$env:PYTHONPATH="."; python .\electromagnetism\electric_field.py
 ```
