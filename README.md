@@ -42,7 +42,7 @@ To run the program ```electromagnetism/electric_field.py``` for example:
 
 **On Linux/macOS:**
 ```bash
-PYTHONPATH=. python electromagnetism/electric_field.py
+export PYTHONPATH=. && python electromagnetism/electric_field.py
 ```
 **On Windows (PowerShell):**
 ```powershell
