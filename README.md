@@ -14,7 +14,7 @@ You may also use the [web browser version of VPython](https://vpython.org/presen
 
 To begin, clone the repository by running this in your terminal:
 ```powershell
-git clone https://github.com/Nav-da-great/Computational-Physics-Projects.git
+git clone https://github.com/Nav-da-great/Computational_Physics_Projects.git
 cd Computational-Physics-Projects
 ```
 Now, create a virtual environment in the project directory:
