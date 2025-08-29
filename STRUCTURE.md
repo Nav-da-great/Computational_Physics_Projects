@@ -12,6 +12,7 @@ This document provides a breakdown of all files and directories in this reposito
 | [**/classical_mechanics**](/classical_mechanics) | Contains Python scripts that simulate phenomenon explained via Classical Mechanics |
 | [angular_momentum.py](classical_mechanics/angular_momentum.py) | Visualizes angular momentum of a binary star system |
 | [double_pendulum.py](classical_mechanics/double_pendulum.py) | Simulation of a double pendulum to visualize classical chaos; uses spring forces (very high stiffness) to avoid defining constraints for tension in the pendulums |
+| [interactive_pendulum.py](classical_mechanics/interactive_pendulum.py) | Simulates a pendulum whose initial position — among other things — can be varied by clicking and dragging the bob |
 | [orbits.py](classical_mechanics/orbits.py) | Visualizes the orbit of an artificial satellite around the Earth and plots various energy curves |
 | [pi_from_blocks.py](classical_mechanics/pi_from_blocks.py) | Rough calculation of the digits of pi via elastic collisions between two blocks. Incredibly well-known because of 3blue1brown's videos. [This](https://www.youtube.com/watch?v=HEfHFsfGXjs) and [this](https://www.youtube.com/watch?v=6dTyOl1fmDo)|
 | [projectile_motion_with_drag.py](classical_mechanics/projectile_motion_with_drag.py) | Simulation of the motion of a projectile launched at an angle under the influence of gravity without and with drag forces acting on it |
