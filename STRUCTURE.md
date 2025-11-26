@@ -18,6 +18,8 @@ This document provides a breakdown of all files and directories in this reposito
 | [projectile_motion_with_drag.py](classical_mechanics/projectile_motion_with_drag.py) | Simulation of the motion of a projectile launched at an angle under the influence of gravity without and with drag forces acting on it |
 | [**/electromagnetism**](/electromagnetism) | Contains Python scripts that simulate phenomenon explained via Electromagnetic Theory |
 | [electric_field.py](electromagnetism/electric_field.py) | Visualizes the changing electric field by virtue of motion between moving charged particles |
+| [**/misc**](/misc) | Contains scripts that I couldn't fit into a particular category |
+| [potential_field_path_finding_method.py](misc/potential_field_path_finding_method.py) | Implementation of a classic path finding algorithm (in robotics) based on potential fields |
 | [**/statistical_mechanics**](/statistical_mechanics) | Contains Python scripts that simulate phenomenon explained via Statistical Mechanics |
 | [brownian_motion.py](statistical_mechanics/brownian_motion.py) | Simulation of brownian motion of a large particle |
 | [**/taylor_computer_solutions**]() | Solutions to selected computer-based problems from Classical Mechanics by John R. Taylor (2005) |
